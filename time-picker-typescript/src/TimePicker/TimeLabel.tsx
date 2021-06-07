@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../ThemeContext';
 
-function TimeLabel() {
+
+interface TimeLabelProps {
+  value: string
+}
+
+function TimeLabel(props: TimeLabelProps) {
+  const context = useContext(ThemeContext);
   return (
     <div>
-      <i>Time Label [Extension!]</i>
+      <span>The selected time is: <b style={{ color: context.label }}>{props.value}</b></span>
     </div>
   );
 }

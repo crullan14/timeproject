@@ -1,0 +1,35 @@
+.time-picker-input-invalid {
+  border-color: red;
+  outline-color: red;
+}
+
+.time-picker-popup {
+  z-index: 1;
+  position: absolute;
+  height: 40vh;
+  overflow-y: scroll;
+  border: 1px solid white;
+  cursor: default;
+}
+
+.time-picker-popup.open-up {
+  top: auto;
+  bottom: 7.5rem;
+}
+
+.time-picker-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:5em;
+}
+
+.time-picker-list-item:hover {
+  /* looked into hover color, not a great way to do so without lib */
+}
+
+
+.time-picker-input {
+  font-size: inherit;
+  width:5em;
+}
